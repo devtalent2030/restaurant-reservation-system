@@ -9,7 +9,7 @@ A full-stack web application for managing restaurant reservations. This solution
 **Restaurant Reservation System** allows users to easily create, view, edit, and delete reservations. The application features a responsive and visually appealing front end along with a robust, tested back end API.
 
 **Screenshots**  
-*(Update the following image links after copying and pasting this content.)*  
+*(Click on the links below to view the key pages and features of the application..)*  
 - [Homepage](./screenshots/Screenshot%202024-12-18%20at%2017.06.33.png)  
 - [Add Reservation Form](./screenshots/Screenshot%202024-12-18%20at%2017.08.03.png)  
 - [Reservation List](./screenshots/Screenshot%202024-12-18%20at%2017.08.44.png)
