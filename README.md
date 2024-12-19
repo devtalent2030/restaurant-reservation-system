@@ -1,80 +1,127 @@
-# Restaurant Reservation System  
+# Restaurant Reservation System
 
-This is a full-stack application for managing reservations in a restaurant. It includes a React frontend, an Express backend, and MongoDB for data persistence.
-
----
-
-## **Features**  
-
-- Add, Edit, and Delete reservations  
-- View all reservations in a styled and user-friendly list  
-- Responsive UI using Material-UI  
-- Full test coverage for backend API routes using Jest and Supertest  
+A full-stack web application for managing restaurant reservations. This solution is built using a React front end, Node.js/Express back end, and MongoDB for data persistence.
 
 ---
 
-## **Technology Stack**  
+## Overview
 
-- **Frontend**: React, Material-UI  
-- **Backend**: Node.js, Express  
-- **Database**: MongoDB Atlas  
-- **Testing**: Jest, Supertest  
+**Restaurant Reservation System** allows users to easily create, view, edit, and delete reservations. The application features a responsive and visually appealing front end along with a robust, tested back end API.
+
+**Screenshots**  
+*(Update the following image links after copying and pasting this content.)*  
+- [Homepage](./screenshots/Screenshot%202024-12-18%20at%2017.06.33.png)  
+- [Add Reservation Form](./screenshots/Screenshot%202024-12-18%20at%2017.08.03.png)  
+- [Reservation List](./screenshots/Screenshot%202024-12-18%20at%2017.08.44.png)
+- [Edit Reservation](./screenshots/Screenshot%202024-12-18%20at%2017.09.29.png)
+---
+
+## Key Features
+
+- **Reservation Management:** Add new reservations, edit existing ones, and delete those no longer needed.
+- **User-Friendly Interface:** Responsive UI built with Material-UI components.
+- **Full Test Coverage:** Thorough back-end API testing with Jest and Supertest.
+- **Scalable Architecture:** A structured approach that can easily be extended to other functionalities.
 
 ---
 
-## **Setup Instructions**  
+## Technology Stack
 
-### Prerequisites  
-
-- Node.js and npm installed  
-- MongoDB Atlas account or local MongoDB setup  
+- **Frontend:** React, Material-UI  
+- **Backend:** Node.js, Express  
+- **Database:** MongoDB (MongoDB Atlas or local)  
+- **Testing:** Jest, Supertest
 
 ---
 
-### Backend Setup  
+## Getting Started
 
-- 1. Clone the repository:  
-   - git clone https://github.com/your-repo/restaurant-reservation-system.git
-   - cd restaurant-reservation-system/server
+### Prerequisites
 
-- npm install
+- **Node.js & npm:** Ensure you have Node.js and npm installed.  
+- **MongoDB:** Have a MongoDB Atlas account or a local MongoDB instance running.
 
-## Create a .env file
+### Backend Setup
 
--MONGO_URI=<your_mongodb_connection_string>
--MONGO_TEST_URI=mongodb://127.0.0.1:27017/reservation_test_db
--PORT=3001
--NODE_ENV=development
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-repo/restaurant-reservation-system.git
+   cd restaurant-reservation-system/server
+   ```
 
-## Start the backend server:
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-- npm start
+3. **Environment Variables:**  
+   Create a `.env` file in the `server` directory and add:
+   ```plaintext
+   MONGO_URI=<your_mongodb_connection_string>
+   MONGO_TEST_URI=mongodb://127.0.0.1:27017/reservation_test_db
+   PORT=3001
+   NODE_ENV=development
+   ```
 
-# Frontend Setup
-## Navigate to the client folder:
+4. **Start the Backend Server:**
+   ```bash
+   npm start
+   ```
 
-- cd ../client
-- Install dependencies:
+   The API should now be running at `http://localhost:3001`.
 
+### Frontend Setup
 
-- npm install
-- Start the React development server:
+1. **Navigate to the Client Directory:**
+   ```bash
+   cd ../client
+   ```
 
-- npm start
-- Open your browser at http://localhost:3000.
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
--API Endpoints
--Base URL: http://localhost:3001
--Endpoint	Method	Description
-/reservations	GET	Fetch all reservations
-/reservations/:id	GET	Fetch reservation by ID
-/reservations	POST	Create a new reservation
-/reservations/:id	PUT	Update a reservation by ID
-/reservations/:id	DELETE	Delete a reservation by ID
--Running Tests
-To test the backend API routes, run:
+3. **Start the React Development Server:**
+   ```bash
+   npm start
+   ```
+   
+   Open your browser and navigate to:  
+   [http://localhost:3000](http://localhost:3000)
 
+---
 
+## API Endpoints
+
+| Endpoint          | Method | Description                      |
+|-------------------|--------|----------------------------------|
+| /reservations     | GET    | Fetch all reservations           |
+| /reservations/:id | GET    | Fetch a reservation by ID        |
+| /reservations     | POST   | Create a new reservation         |
+| /reservations/:id | PUT    | Update an existing reservation   |
+| /reservations/:id | DELETE | Delete a reservation by ID       |
+
+---
+
+## Running Tests
+
+To run the backend tests:
+```bash
+cd server
 npm test
+```
 
-Tests are written using Jest and Supertest.
+Tests are implemented using **Jest** and **Supertest** for comprehensive API coverage.
+
+---
+
+## License
+
+*(Include your preferred license here if applicable.)*
+
+---
+
+## Contributing
+
+We welcome contributions! Please open issues and submit pull requests as needed.
